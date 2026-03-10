@@ -26,7 +26,7 @@ function PurchaseOrderSummary() {
         const ownerId = user?._id || guest?._id;
         const endpoint = `${import.meta.env.VITE_API_URL}/api/purchaseOrderDraft/${ownerType}/${ownerId}`;
 
-        const res = await fetch(endpoint);
+        const res = await fetch(endpoint, { credentials: "include" });
         if (!res.ok) throw new Error("Failed to fetch purchase order");
 
         const data = await res.json();

@@ -156,8 +156,9 @@ const Checkout = () => {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          credentials: "include",
           body: JSON.stringify({ orderId }),
-        }
+       }
       );
 
       const sessionData = await sessionRes.json();
