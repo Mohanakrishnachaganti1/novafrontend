@@ -1,0 +1,153 @@
+* { box-sizing: border-box; }
+
+/* ---------- Overall Container ---------- */
+.purchase-order-form {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.business-log-purchase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;          /* Full width so centering works properly */
+  margin-bottom: 20px;
+}
+
+.business-log-purchase img {
+  max-width: 180px;     /* Control logo size */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.purchase-order-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color:#1a4f35;
+}
+
+/* ---------- Flex container for left and right form sections ---------- */
+.po-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* LEFT AND RIGHT SECTIONS */
+.po-left,
+.po-right {
+  flex: 1;
+}
+
+.po-form-section h3 {
+  margin-bottom: 15px;
+  color: #1a4f35;
+}
+
+/* ---------- Form Inputs ---------- */
+.purchase-order-form input,
+.purchase-order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.purchase-order-form input:focus,
+.purchase-order-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+/* ---------- Item Table ---------- */
+.po-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.po-table th {
+  background: #1a4f35;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+.po-table td {
+  padding: 8px;
+}
+
+.po-table input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.po-table button {
+  background: #ff4040;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.po-table button:hover {
+  background: #d60000;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #000000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #000000;
+}
+
+/* Error message */
+.po-form-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.checkout-section {
+  margin-top: 20px;
+  text-align: right;
+  /* align total and button to right */
+}
+
+.checkout-section .grand-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .po-container {
+    flex-direction: column;
+  }
+
+  .po-left,
+  .po-right {
+    width: 100%;
+  }
+}

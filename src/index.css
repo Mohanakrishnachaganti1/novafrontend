@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 250px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+

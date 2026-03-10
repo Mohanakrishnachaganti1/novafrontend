@@ -1,0 +1,24 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  display: flex;             /* enables left/right alignment */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+/******************* Mobile Responsiveness *******************/ 
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;   /* stack items vertically */
+    text-align: center;
+    gap: 15px;                /* space between elements */
+  }
+}

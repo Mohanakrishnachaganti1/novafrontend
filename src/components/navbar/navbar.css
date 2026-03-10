@@ -1,0 +1,161 @@
+/* ---------------- Top Navigation ---------------- */
+.top-nav {
+  width: 100%;
+  background: black;
+}
+
+.top-nav .container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  color:red;
+  font-weight: bold;
+}
+
+/* Keep links on right */
+.top-nav ul {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.top-nav li a:hover {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ---------------- Main Navigation ---------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: #1a4f35;
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 100;
+  height: 117px;
+}
+
+/* .cart-icon{
+  color:goldenrod;
+} */
+.cart-count{
+  color:black;
+  padding: 20px;
+  background-color: goldenrod ;
+}
+
+/* Guest signout button styling */
+.signout-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: inherit;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.signout-btn:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+/* Main menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin-left:100px;
+  padding: 0;
+  gap: 100px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-title {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.menu-title:hover {
+  text-decoration: none;
+}
+
+.menu-title:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+
+
+/* ---------------- Mega Menu ---------------- */
+.mega-menu {
+  position: fixed;
+  top: 160px; /* Adjusted for top nav + main nav */
+  left: 0;
+  width: 100vw;
+  background: #f8f8f8;
+  padding: 20px 0 10px 300px;
+  display: flex;
+  gap: 32px;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mega-section {
+  min-width: 180px;
+}
+
+.mega-section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mega-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-section li {
+  margin-bottom: 8px;
+}
+
+.mega-section li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.mega-section li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
