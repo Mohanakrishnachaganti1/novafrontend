@@ -39,7 +39,7 @@ const SignUp = () => {
     <div className="signup-container">
       <h2 className="signup-heading">Create Account</h2>
 
-      <form className="signup-form" onSubmit={handleSubmit}>
+      <form className="signup-form" method="post" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Full Name"
